@@ -77,6 +77,7 @@ e → <E>
 - **Learning rate:** ```0.1```  
 - **Epochs:** ```500```  
 - **Framework:** PyTorch (low-level tensor operations)
+
 Cross-entropy loss corresponds to **negative log-likelihood**, meaning training maximizes the probability of the observed bigrams.
 
 ## Evaluation  
