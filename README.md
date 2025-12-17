@@ -22,3 +22,23 @@ In this implementation:
 
 The model is a **single-layer neural bigram model**:
 
+**One-hot (current character) → Linear layer (W, b) → Logits over vocabulary → Softmax → Probabilities**
+
+Mathematically, the neural bigram model is defined as:
+
+$$
+\text{logits} = W[c_t] + b
+$$
+
+$$
+P(c_{t+1} \mid c_t) = \text{softmax}(\text{logits})
+$$
+
+Where:
+- W has shape (vocab_size, vocab_size)
+- Each row of W represents the logits for the next character given the current character
+
+
+ 
+
+
